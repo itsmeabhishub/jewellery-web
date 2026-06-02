@@ -1,0 +1,134 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-background);
+  padding-top: var(--spacing-4xl);
+}
+
+.pageHeader {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  color: white;
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-4xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-lg);
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-4xl);
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.trustSection {
+  background: var(--color-background);
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.trustTitle {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+  color: var(--color-text-primary);
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.trustCard {
+  background: white;
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.trustCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.trustIcon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.trustCardTitle {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.trustCardText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .container {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .trustGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
